@@ -63,6 +63,12 @@ footer {
     margin: 50px 0;
 }
 
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+} 
+
 @media(max-width:1200px) {
     .headline h1 {
         font-size: 140px;
@@ -256,8 +262,8 @@ footer {
   background-image: url("https://dickturnip.github.io/bgunn_jr/media/images/footer_lodyas.png");
   margin-top: 50px;
   margin-bottom: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .section-3 {
