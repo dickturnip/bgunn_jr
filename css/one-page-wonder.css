@@ -10,6 +10,15 @@ body {
     font-family: 'Passion One', cursive;
 }
 
+form {
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  color: #fff;
+  font-size: 16px;
+}
+
 .navbar-brand {
   font-family: 'Roboto', sans-serif;
   font-size: 23px;
@@ -28,9 +37,12 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+
+
 }
 
 .headline {
