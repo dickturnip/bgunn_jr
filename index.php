@@ -143,7 +143,7 @@
             <footer>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p>Copyright &copy; www.bobbygunnjr.com 2016 - Design by Drew Watson</p>
+                        <p>Copyright &copy; www.bobbygunnjr.com <?php echo Date('Y') ?> - Design by Drew Watson</p>
                     </div>
                 </div>
             </footer>
@@ -160,6 +160,7 @@
     <script src="https://dickturnip.github.io/bgunn_jr/bower_components/jquery-fadethis/dist/jquery.fadethis.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
+    // Smooth scrolling
     $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
