@@ -1,3 +1,29 @@
+<?php
+      /*$email;
+      $captcha;
+
+      if(isset($_POST['email'])){
+        $email=$_POST['email'];
+      }if(isset($_POST['comment'])){
+        $email=$_POST['comment'];
+      }if(isset($_POST['g-recaptcha-response'])){
+        $captcha=$_POST['g-recaptcha-response'];
+      }
+      if(!$captcha){
+        $message = '<h2>Please check the the captcha form.</h2>';
+        exit;
+      }
+      $secretKey = "Put your secret key here";
+      $ip = $_SERVER['REMOTE_ADDR'];
+      $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+      $responseKeys = json_decode($response,true);
+      if(intval($responseKeys["success"]) !== 1) {
+        echo '<h2>You are spammer ! Get the @$%K out</h2>';
+      } else {
+        echo '<h2>Thanks for posting comment.</h2>';
+      }*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +56,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -40,7 +66,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Bobby Gunn Jr</a>
+                <a class="navbar-brand" href="#top">Bobby Gunn Jr</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -52,7 +78,7 @@
                         <a href="#record">Record</a>
                     </li>
                     <li>
-                        <a href="#contact">Booking</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -89,14 +115,14 @@
             <!-- Second Featurette -->
             <div class="featurette">
                 <img class="featurette-image img-circle img-responsive pull-left slide-right" src="https://dickturnip.github.io/bgunn_jr/media/images/header.png">
-                <h2 class="featurette-heading">8 0 0
-                <span class="text-muted">Is Pretty Cool Too.</span>
+                <h2 class="featurette-heading">Professional Record
+                <span class="text-muted">8 - 0 - 0</span>
             </h2>
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
         </div>
     </div>
-    <div class="section-3" id="contact">
+    <div class="section-3" id="contact" class="particle">
         <div class="container">
           <h2 class="featurette-heading">Contact Bobby Gunn Jr</h2>
           <br /><br />
@@ -136,7 +162,7 @@
                 </div>
             </form>
         </div>
-    </div>
+  </div>
     <div class="section-4">
         <div class="container">
             <!-- Footer -->
@@ -159,6 +185,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://dickturnip.github.io/bgunn_jr/bower_components/jquery-fadethis/dist/jquery.fadethis.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type='text/javascript' src='http://localhost:9898/js/jquery.particleground.min.js'></script>
     <script>
     // Smooth scrolling
     $(function() {
@@ -175,6 +202,14 @@
       }
     });
     });
+    </script>
+    <script>
+    $(document).ready(function() {
+      $('#contact').particleground({
+      dotColor: '#5cbdaa',
+      lineColor: '#5cbdaa'
+        });
+    })
     </script>
     <script>
         //var isMobile = window.matchMedia("only screen and (max-width: 768px)");
