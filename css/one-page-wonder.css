@@ -50,8 +50,6 @@ label {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-
-
 }
 
 .headline {
@@ -100,7 +98,7 @@ p {
 }
 
 footer {
-    margin: 50px 0;
+    padding: 50px;
 }
 
 @media(max-width:1200px) {
@@ -286,19 +284,15 @@ footer {
 }
 
 .section-1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 90px;
   padding-bottom: 50px;
 }
 
 .section-2 {
   background: url("https://dickturnip.github.io/bgunn_jr/media/images/footer_lodyas.png") no-repeat center center scroll;
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -309,15 +303,12 @@ footer {
 }
 
 .section-3 {
-  margin-top: 50px;
-  margin-bottom: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .section-4 {
   background-color: #cc0000;
-  margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
 }

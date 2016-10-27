@@ -185,7 +185,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://dickturnip.github.io/bgunn_jr/bower_components/jquery-fadethis/dist/jquery.fadethis.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type='text/javascript' src='http://localhost:9898/js/jquery.particleground.min.js'></script>
+    <script type='text/javascript' src='https://dickturnip.github.io/bgunn_jr/jquery.particleground.min.js'></script>
     <script>
     // Smooth scrolling
     $(function() {
